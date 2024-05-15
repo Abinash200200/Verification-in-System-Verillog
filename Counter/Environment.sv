@@ -1,6 +1,6 @@
-`include "Transaction.sv"  // Include the transaction class definition
-`include "Generator.sv"    // Include the generator class definition
-`include "Driver.sv"       // Include the driver class definition
+`include "Transaction.sv"  // Include the Transaction class definition
+`include "Generator.sv"    // Include the Generator class definition
+`include "Driver.sv"       // Include the Driver class definition
 
 class envii;
   virtual cou vintf;       //  Declare a virtual interface 'vintf' of type 'cou'
