@@ -1,4 +1,4 @@
-`include "envii.sv"  // Include the environment class definition
+`include "Environment.sv"  // Include the environment class definition
 
 class tee;
   envii enb;             // Declare a variable 'enb' of type 'envii'
