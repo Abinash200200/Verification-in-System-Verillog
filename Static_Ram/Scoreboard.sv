@@ -12,15 +12,15 @@ class score;
   // Task to process transactions and check results
   task main;
     forever begin
-      mbx.get(tramp); // Line 1: Get a transaction from the mailbox
-      if (tramp.din) // Line 2: Check if the transaction data input is valid
-        $display("Result is as Expected = %0d", tramp.din); // Line 3: Display expected result
+      mbx.get(tramp); // Get a transaction from the mailbox
+      if (tramp.din) // Check if the transaction data input is valid
+        $display("Result is as Expected = %0d", tramp.din); // Display expected result
       else
-        $display("Wrong Result.\n\tExpected = %0d", tramp.din); // Line 4: Display wrong result message
+        $display("Wrong Result.\n\tExpected = %0d", tramp.din); // Display wrong result message
       
-      no_trans++; // Line 5: Increment the transaction count
-      // tramp.display("[ Scoreboard ]"); // Line 6: Optionally display transaction details (commented)
-      // #10; // Line 7: Optional delay (commented)
+      no_trans++; // Increment the transaction count
+      // tramp.display("[ Scoreboard ]"); //  Optionally display transaction details (commented)
+      // #10; //  Optional delay (commented)
     end
   endtask
   
